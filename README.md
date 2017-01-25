@@ -98,6 +98,6 @@ similar things. ex47 has a great structure for overworld 'move' commands where t
    Can utilize the returned outcome to determine which location to load next
 
 >####  (Optional) Add Battle Triggers:  
->   Triggers occur after player turn, and enemy turn. They can use the in-built turn_counter or any condition specified that uses the self.ea object (enemy army) or self.pa object (player).
+>   Triggers occur after player turn, and enemy turn. They can use the in-built turn_counter or any condition specified that uses the `self.ea` object (enemy army) or `self.pa` object (player).
 >
 >   Triggers are written in a custom `BattleEngine` class that has a modified method `player_triggers` or `enemy_triggers`. See the campaign battle subclasses for examples
