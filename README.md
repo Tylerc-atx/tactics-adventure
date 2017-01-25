@@ -12,11 +12,11 @@ similar things. ex47 has a great structure for overworld 'move' commands where t
 ---
 
 
-###HOW TO MAKE A FULL GAME
+### HOW TO MAKE A FULL GAME
 (To make just a battle, follow steps 1 and 4)
 
 
-#######0. __main__ needs to import modules
+####### 0. __main__ needs to import modules
 
    ```python
    import units as units  
@@ -26,7 +26,7 @@ similar things. ex47 has a great structure for overworld 'move' commands where t
    import locations as locations  
    ```
 
-######1. HOW TO MAKE A **UNIT AND ARMY** `(Player army in __main__)`
+###### 1. HOW TO MAKE A **UNIT AND ARMY** `(Player army in __main__)`
 
    Make a unit:  
    ```python
@@ -47,7 +47,7 @@ similar things. ex47 has a great structure for overworld 'move' commands where t
 
    _ONLY A PLAYER ARMY IS NEEDED TO START CAMPAIGN, ENEMY ARMIES WILL BE MADE BY LOCATIONS_
 
-####### To create an AI Commander (non-player army only)  
+#######  To create an AI Commander (non-player army only)  
    Create a new Commander object  
    ```python
    new_commander = CommanderClass()
@@ -97,7 +97,7 @@ similar things. ex47 has a great structure for overworld 'move' commands where t
 
    Can utilize the returned outcome to determine which location to load next
 
-   #######(Optional) Add Battle Triggers:  
+#######  (Optional) Add Battle Triggers:  
    Triggers occur after player turn, and enemy turn. They can use the in-built turn_counter or any condition specified that uses the self.ea object (enemy army) or self.pa object (player).
 
    Triggers are written in a custom `BattleEngine` class that has a modified method `player_triggers` or `enemy_triggers`. See the campaign battle subclasses for examples
