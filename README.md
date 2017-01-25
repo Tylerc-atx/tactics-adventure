@@ -60,11 +60,11 @@ similar things. ex47 has a great structure for overworld 'move' commands where t
 
    Ai will automatically populate army attributes
 
-   (optional) Create a new AI decision priority list:  
-   * Make a new commander class in `ai.py`  
-     For the unit TYPE you would like to edit the decision-making tree for a type by editing the attribute list.  
-   * Edit the preferred_list actions  
-     Enter `['action', 'enemytype']` in the order that you want the AI to take actions as they are available.
+>   (optional) Create a new AI decision priority list:  
+>   * Make a new commander class in `ai.py`  
+>     For the unit TYPE you would like to edit the decision-making tree for a type by editing the attribute list.  
+>   * Edit the preferred_list actions  
+>     Enter `['action', 'enemytype']` in the order that you want the AI to take actions as they are available.
 
 
 ###2. HOW TO MAKE A LOCATION
@@ -97,7 +97,7 @@ similar things. ex47 has a great structure for overworld 'move' commands where t
 
    Can utilize the returned outcome to determine which location to load next
 
-####  (Optional) Add Battle Triggers:  
-   Triggers occur after player turn, and enemy turn. They can use the in-built turn_counter or any condition specified that uses the self.ea object (enemy army) or self.pa object (player).
-
-   Triggers are written in a custom `BattleEngine` class that has a modified method `player_triggers` or `enemy_triggers`. See the campaign battle subclasses for examples
+>####  (Optional) Add Battle Triggers:  
+>   Triggers occur after player turn, and enemy turn. They can use the in-built turn_counter or any condition specified that uses the self.ea object (enemy army) or self.pa object (player).
+>
+>   Triggers are written in a custom `BattleEngine` class that has a modified method `player_triggers` or `enemy_triggers`. See the campaign battle subclasses for examples
