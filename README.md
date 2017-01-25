@@ -2,7 +2,7 @@
 v0.10a of the revolutionary text-based strategy game that simulates battles without using any numbers
 
 CURRENT DEVELOPMENT NOTES
-
+d
 
 """This document is outdated and meant for the exercise draft only.
 Read the ex45developmentdocumentation file instead.
