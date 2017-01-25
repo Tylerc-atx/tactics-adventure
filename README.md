@@ -3,7 +3,7 @@
 
 ---
 
-##CURRENT DEVELOPMENT NOTES
+####CURRENT DEVELOPMENT NOTES
 
 * DEV NOTES: FIX THE GAME BREAKING DEFENSE STALEMATE ISSUE
 * Use dictionary.get(key, None) to retrieve things from dictionaries to avoid all the pointless if statements for allyflank and other
@@ -12,11 +12,11 @@ similar things. ex47 has a great structure for overworld 'move' commands where t
 ---
 
 
-### HOW TO MAKE A FULL GAME
+## HOW TO MAKE A FULL GAME
 (To make just a battle, follow steps 1 and 4)
 
 
-#### 0. __main__ needs to import modules
+### 0. __main__ needs to import modules
 
    ```python
    import units as units  
@@ -26,7 +26,7 @@ similar things. ex47 has a great structure for overworld 'move' commands where t
    import locations as locations  
    ```
 
-#### 1. HOW TO MAKE A **UNIT AND ARMY** `(Player army in __main__)`
+### 1. HOW TO MAKE A **UNIT AND ARMY** `(Player army in __main__)`
 
    Make a unit:  
    ```python
@@ -67,7 +67,7 @@ similar things. ex47 has a great structure for overworld 'move' commands where t
      Enter `['action', 'enemytype']` in the order that you want the AI to take actions as they are available.
 
 
-####2. HOW TO MAKE A LOCATION
+###2. HOW TO MAKE A LOCATION
 
    Create a new Location class in `locations.py`.  
    Give it a `enter()` method that returns the string key of the next location
@@ -76,7 +76,7 @@ similar things. ex47 has a great structure for overworld 'move' commands where t
    (See below on how to start a battle)
 
 
-####3. HOW TO USE THE LOCATION ENGINE AND LOCATIONS
+###3. HOW TO USE THE LOCATION ENGINE AND LOCATIONS
 
    Create a dictionary map of `{"string keys": location objects}`
 
@@ -86,7 +86,7 @@ similar things. ex47 has a great structure for overworld 'move' commands where t
 
 
 
-####4. HOW TO INSTANTIATE A BATTLE
+###4. HOW TO INSTANTIATE A BATTLE
 
    Create a new battle object
    ```python
